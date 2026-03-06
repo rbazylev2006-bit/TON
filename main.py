@@ -11,7 +11,7 @@ from aiogram import Bot, types
 
 BOT_TOKEN = os.environ.get("BOT_TOKEN")
 CHANNEL_ID = int(os.environ.get("CHANNEL_ID"))
-HISTORY_DAYS = 7
+HISTORY_DAYS = 1
 
 logging.basicConfig(level=logging.INFO)
 
