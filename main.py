@@ -81,7 +81,7 @@ async def main():
         )
         await bot.send_photo(
             chat_id=CHANNEL_ID,
-            photo=InputFile(chart_buf, filename="ton_chart.png"),
+            photo=types.BufferedInputFile(chart_buf.getvalue(), filename="ton_chart.png")
             caption=caption
         )
         logging.info("Пост отправлен")
